@@ -1,0 +1,46 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package week5;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author tom
+ */
+public class Homework3 {
+    public static void main(String[] args) {
+    // Declare and initialize variables for each LaScola's Italian Ice product
+    int custard = 0;
+    int coffee = 0;
+    int italianice = 0;
+    int scone = 0;
+    int goodday = 50;
+    //Build a scanner object
+    Scanner scan = new Scanner(System.in);
+    //Accepting input for each variable
+    System.out.println("How much custard was sold?");
+    custard = scan.nextInt();
+    System.out.println("How much coffee was sold?");
+    coffee = scan.nextInt();
+    System.out.println("How much italian ice was sold?");
+    italianice = scan.nextInt();
+    System.out.println("How many scones were sold?");
+    scone = scan.nextInt();
+    //Adding up total sales based on user input
+    int TotalSales = custard + coffee + italianice + scone;        
+    System.out.println("Your total sales were; " + TotalSales);
+    //If statement to determine if it was a good day
+    if(TotalSales >= goodday){
+      System.out.println("You had a very busy day today!");
+    }
+       
+  else {
+   System.out.println("The weather must have been bad! Better luck tomorrow!");
+    } 
+    }
+} 
+    
