@@ -1,0 +1,83 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package object1;
+
+/**
+ *
+ * @author tom
+ */
+public class DonutLand1 {
+    
+    public static void main(String[] args){
+        final int firstBiteSize = 5;
+        
+        final int secondBiteSize = 45;
+        
+        //create a "handle" variable that can store references to Donut objects 
+        Donut firstDonut;
+        Donut secondDonut;
+        //create a new Donut (an instance of the Donut Class) and connect 
+        //this new object to our "handle" variable firstDonut
+        firstDonut = new Donut();
+        secondDonut = new Donut();
+        //access firstDonut's name property, which is type String, and
+        //store the name "Chloe" in this particular Donut object's memory bin
+        firstDonut.name = "Chloe";
+        secondDonut.name = "Crusoe";
+        
+        printObjectData(firstDonut);
+        printObjectData(secondDonut);
+        
+        System.out.println("Eating " + firstDonut.name);
+        System.out.println("Nibble...");
+        firstDonut.simuLateEating(firstBiteSize);
+        System.out.println("Nibble...");
+        firstDonut.simuLateEating(firstBiteSize);
+        System.out.println("Taking megaBite...");
+        firstDonut.simuLateEating(secondBiteSize);
+        
+        printObjectData(firstDonut);
+        
+        System.out.println("Eating " + secondDonut.name);
+        System.out.println("Taking lots of megaBites");
+        System.out.println("gnam gnam");
+        secondDonut.simuLateEating(secondBiteSize);
+        System.out.println("gnam gnam");
+        secondDonut.simuLateEating(secondBiteSize);
+        System.out.println("gnam gnam");
+        secondDonut.simuLateEating(secondBiteSize);
+        System.out.println("gnam gnam");
+        secondDonut.simuLateEating(secondBiteSize);
+        System.out.println("gnam gnam");
+        secondDonut.simuLateEating(secondBiteSize);
+        System.out.println("gnam gnam");
+        secondDonut.simuLateEating(secondBiteSize);
+        System.out.println("gnam gnam");
+        secondDonut.simuLateEating(secondBiteSize);
+        System.out.println("gnam gnam");
+        secondDonut.simuLateEating(secondBiteSize);
+        System.out.println("gnam gnam");
+        secondDonut.simuLateEating(secondBiteSize);
+        System.out.println("gnam gnam");
+        secondDonut.simuLateEating(secondBiteSize);
+        
+        printObjectData(secondDonut);
+        
+     
+        
+        
+    }//close main
+    
+    private static void printObjectData(Donut inputDonut){
+        System.out.println("|-------STATS-------|");
+        System.out.println("| Name: " + inputDonut.name);
+        System.out.println("|PercRemaining: " + inputDonut.getPercRemaining());
+        System.out.println("|-------------------|");
+    }//close printOjectData method
+}//close class    
+
+        
+ 
